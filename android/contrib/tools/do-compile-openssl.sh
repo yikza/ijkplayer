@@ -72,6 +72,8 @@ TARGET_MAKE_FLAGS="$IJK_MAKE_FLAG"
 TARGET_GCC_VER=$IJK_GCC_VER
 TARGET_GCC_64_VER=$IJK_GCC_64_VER
 
+export LDFLAGS="-Wl,-z,max-page-size=16384 $LDFLAGS"
+
 
 #如果未指定，从Armv7a开始编译
 if [ "$TARGET_ARCH" = "armv7a" ]; then

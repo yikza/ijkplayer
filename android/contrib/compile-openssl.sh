@@ -22,7 +22,8 @@ set -e
 set +x
 
 TARGET_ACT_ARCHS_32="armv7a x86"
-TARGET_ACT_ARCHS_64="armv7a arm64 x86 x86_64"
+#TARGET_ACT_ARCHS_64="armv7a arm64 x86 x86_64"
+TARGET_ACT_ARCHS_64="armv7a arm64"
 TARGET_ACT_ARCHS_ALL=$TARGET_ACT_ARCHS_64
 
 echo_archs() {

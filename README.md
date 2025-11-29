@@ -54,7 +54,7 @@ https://github.com/bilibili/ijkplayer 的fork,有所改动
 开始编译OpenSSL,FFmpeg(注意有没有报错比如说`Error:`这样的)
 
     sh compile-openssl.sh all
-    sh compile-ffmpeg.sh clean
+    sh compile-ffmpeg.sh all
 
 开始编译ijkplayer
 

@@ -22,6 +22,8 @@ include $(CLEAR_VARS)
 LOCAL_C_INCLUDES += $(LOCAL_PATH)
 LOCAL_C_INCLUDES += $(realpath $(LOCAL_PATH))
 
+LOCAL_LDFLAGS += -Wl,-z,max-page-size=16384
+
 LOCAL_SRC_FILES += j4a/j4a_allclasses.c
 LOCAL_SRC_FILES += j4a/j4a_base.c
 LOCAL_SRC_FILES += j4a/class/android/media/AudioTrack.c
